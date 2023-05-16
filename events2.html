@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>WELCOME</h1>
+    <br>
+    <button onmousedown="myfun()">CLICK ME</button>
+    <button onmouseenter="myfun2()">CLICK ME 2</button>
+    <button onmouseout="myfun3()">CLICK ME 3</button>
+    <button onmouseup="myfun4()">CLICK ME 4</button>
+
+
+
+    <script type="text/javascript">
+        function myfun(){
+            document.body.style.backgroundColor = "blue";
+            document.body.style.color = "white";
+        }
+
+        function myfun2(){
+            document.body.style.backgroundColor = "pink";
+            document.body.style.color = "white";
+        }
+
+        function myfun3(){
+            document.body.style.backgroundColor = "red";
+            document.body.style.color = "white";
+        }
+
+
+        function myfun4(){
+            document.body.style.backgroundColor = "green";
+            document.body.style.color = "white";
+        }
+    </script>
+    
+</body>
+</html>

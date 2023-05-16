@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="ze">Sanya</p>
+    <p class="xy">Kushal</p>
+    <p class="ab">Daksh</p>
+
+    <ul class="list"><li>like</li>
+        <li>share</li>
+        <li>subscribe</li>
+
+    </ul>
+<!-- Access children of body -->
+    
+</body>
+    <script type="text/javascript">
+        var child = document.body.children;
+        console.log(child);
+
+        //  Add a new child in body 
+
+        var para = document.createElement("p");
+        var textNode = document.createTextNode("Hello!! How are you??");
+        para.appendChild(textNode);
+        console.log(para);
+
+        //now we want the para to show in the body 
+        document.body.appendChild(para);
+
+        //accessing the firstChild
+
+        var list = document.querySelector("ul");
+        console.log(list);
+        console.log(list.firstChild);
+     
+
+    </script>
+
+    
+</body>
+</html>

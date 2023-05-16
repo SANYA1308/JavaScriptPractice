@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Window is a global object and inside it we have multiple objects -->
+    <!-- Location object contains the information about the current URL. The location object is a part of window object -->
+
+
+    <button onclick="myfun()">Click Me</button>
+    <script type="text/javascript">
+        document.write(window.location.href);
+        document.write(window.location.Hostname);
+
+        function myfun(){
+            // window.location="https://www.google.com/";
+            window.location.assign("https://www.google.com/");
+        }
+    </script>
+</body>
+</html>

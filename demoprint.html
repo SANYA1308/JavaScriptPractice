@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <div id="divone">
+        Div One content here
+        <button onclick="myfun('divone')">DIVONE</button>
+    </div>
+    <br>
+
+    <div id="divtwo">
+        Div two content here
+        <button onclick="myfun('divtwo')">DIVTWO</button>
+    </div>
+
+    <br>
+    <div id="divthree">
+        Div three content here
+        <button onclick="myfun('divthree')">DIVTHREE</button>
+    </div>
+    <button onclick="mywholepage()">WholePage</button>
+    <script type="text/javascript">
+        function mywholepage(){
+            window.print();
+        }
+
+        function myfun(paravalue){
+            var backup = document.body.innerHTML;
+            var divcontent = document.getElementById(paravalue).innerHTML;
+            document.body.innerHTML = divcontent;
+            window.print();
+             document.body.innerHTML = backup;
+
+
+
+
+
+
+
+
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

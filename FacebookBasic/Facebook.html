@@ -1,0 +1,40 @@
+<script>
+
+    let database = [{
+        username: "Sanya",
+        password: "sanya123",
+    }];
+
+    let status = [{
+        name: 'Samridhi',
+        status: "glad to connect with you!!"
+    },
+
+      {name:'Kushal',
+       status: "Loved to connect with you!!",
+
+}
+
+];
+    
+    const username = prompt("Enter your username");
+    const password = prompt("Enter the password");
+
+    const login = (usr, pass) =>{
+        if(usr== database[0].username && pass==database[0].password){
+            // console.log(status);
+            for(let value in status){
+                console.log(status);
+            }
+        }
+        else{
+            alert("Username or password is incorrect!!");
+        }
+    }
+
+    login(username, password);
+</script>
+
+
+
+    
