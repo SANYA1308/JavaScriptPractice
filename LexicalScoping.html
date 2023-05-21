@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a  = "Hi People";
+
+        function func1(){
+            var b = "How are you?";
+            console.log(a);
+
+            func2();
+
+            function func2(){
+                var c = "Lets catch up!!";
+                console.log(b);
+                console.log(a+b+c);
+                func3();
+            }
+        }
+        function fun3(){
+            var d = "What is javascript?";
+            console.log(a+b+c+d);
+        }     //b and c are out of the scope of function three so they cant be called but a and d can be called bcs a is in the global scope
+        
+        
+
+        func1();
+    </script>
+</body>
+</html>
