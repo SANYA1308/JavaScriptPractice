@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const outerFunc = () =>{
+        //     let b = 10;
+        //     let a = 11;
+           
+
+        //     const innerFunc = () =>{
+        //         let sum = a + b;
+        //         console.log(sum);
+        //     }
+        //     innerFunc();
+        // }
+        // outerFunc();
+        const outerFunc = (a) =>{
+            let b = 10;
+            
+           
+
+            const innerFunc = () =>{
+                let sum = a + b;
+                console.log(sum);
+            }
+            return innerFunc;
+        }
+        let inner = outerFunc(5);
+
+        console.dir(inner);
+        inner();
+    </script>
+</body>
+</html>
