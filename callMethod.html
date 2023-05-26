@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const random = {
+            name: "Sanya",
+            content: "Web development",
+            feature : function(interviewRound, topic){
+                console.log(`hey!! ${this.name} React, HTML , CSS, JavaScript etc. are a part of ${this.content}. Your ${interviewRound} round of interview will be tomorrow. Prepare ${topic} for tomorrow.`)
+            }
+         }
+
+        //  random.feature();
+ //call method:  basically an object can use the method of another object
+
+   const random2 = {
+    name: "Kushal",
+    content: "Vlog",
+
+   }
+  random.feature.call(random2, 3, "WEB DEVELOPMENT");
+
+
+
+    </script>
+</body>
+</html>
