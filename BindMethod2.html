@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const random = {
+            name: "Sanya",
+            content: " ze",
+        }
+
+        const random2 = {
+            name: "Sneha",
+            content: " zze",
+        }
+
+        const random3 = {
+            name: "Kushal",
+            content: " ze",
+        }
+        const random4 = {
+            name: "Shreya",
+            content: " abxze",
+        }
+
+        const features = function(){
+            console.log(`Hey I am ${this.name}. I am writing about ${this.content}.`);
+        }
+
+        const ran = features.bind(random);
+        const ran2 = features.bind(random2);
+        const ran3 = features.bind(random3);
+        const ran4 = features.bind(random4);
+
+        ran();
+        ran2();
+        ran3();
+        ran4();
+
+        
+    </script>
+</body>
+</html>
